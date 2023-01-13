@@ -11,6 +11,11 @@ var tester = new GetSupport();
 tester.support("html","h1");
 ```
 
+## Verify HTML Attribute support
+```
+tester.support("attribute","placeholder","input");
+```
+
 ## Verify SVG support
 ```
 tester.support("svg","Rect");
@@ -19,17 +24,17 @@ tester.support("svg","Rect");
 
 ## Verify CSS support
 ```
-tester.support("cssIE","display");
+tester.support("css01","display");
 //This work on IE and can make this: "border-radius" == "borderRadius"
 //Or
-tester.support("css","display");
+tester.support("css02","display");
 //This not work on IE but you can make this: tester.support("css","display","flex");
 ```
 
 ## Verify JS support
 ```
-tester.support("jsPrefix","indexedDB");
+tester.support("js01","indexedDB");
 //This test the support whit prefixes
 //Or
-tester.support("js","indexedDB");
+tester.support("js02","indexedDB");
 ```
